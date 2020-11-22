@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_DangKy_DangNhap.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button  onclick="login()" type="button" class="toggle-btn" >Đăng Nhập</button>
+                <button onclick="register()"  type="button" class="toggle-btn" >Đăng Ký</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nhập Tài Khoản">
+                <input type="password"  id="eye"  class="input-field" placeholder=" Nhập Mật Khẩu">
+                <span class="icon" onclick="iconshow()" >
+                    <img src="./image/eye.png" alt="">
+                </span>
+                <input type="checkbox" class="check-box"> <span>Ghi Nhớ Mật Khẩu </span>
+                
+                <button type="submit" class="submit-btn">Đăng Nhập</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Nhập Tài Khoản">
+                <input type="password" id="eye" class="input-field" placeholder=" Nhập Mật Khẩu">
+                <span class="icon" onclick="iconshow()" >
+                    <img src="./image/eye.png" alt="">
+                </span>
+                <input type="text" class="input-field" placeholder="Nhập Email ">
+                <input type="checkbox" class="check-box"> <span>Đồng ý với các điểu khoản </span>
+                <button type="submit" class="submit-btn">Đăng Ký</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        var b = true;
+        function iconshow(){
+            if(b){
+                document.getElementById('eye').type="text";
+                b = false;
+            }else{
+                document.getElementById('eye').type="password";
+                b = true;
+            }
+        }
+       function register() {
+            x.style.left = "-400px";
+            y.style.left = "20px";
+            z.style.left = "127px"
+       }
+        function login(){
+            x.style.left = "10px";
+            y.style.left = "400px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+</html>

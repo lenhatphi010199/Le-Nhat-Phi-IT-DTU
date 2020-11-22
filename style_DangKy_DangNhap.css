@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0%;
+  font-family: sans-serif;
+}
+.hero{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(223, 55, 125, 0.4),rgba(223, 55, 125, 0.4)), url(./image/anhbia3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.hero .form-box{
+  height: 400px;
+  width: 380px;
+  background: #fff;
+  padding: 5px;
+  position: relative;
+  margin:7% auto;
+  overflow: hidden;
+}
+.hero .form-box .button-box{
+  width: 250px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px rgba(241, 5, 84, 0.596);
+  border-radius: 30px;
+}
+.hero .form-box .button-box .toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer; /*thay đổi con trỏ chuột*/
+  background: transparent; /*màu trng suôt*/
+  border: 0;
+  outline: none; /*đường viền */
+  position: relative;
+}
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 125px;
+  height: 100%;
+  background: linear-gradient(#ff105f,#ff06ff);
+  border-radius: 30px;
+  transition: .5s;
+}
+.input-group{
+  top:180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field{
+  width: 300px;
+  height: 23px;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border: transparent;
+  border-bottom: 2px solid #ff06b4;
+  outline: none;
+  background: transparent;
+  position: relative;
+}
+.submit-btn{
+  width: 80%;
+  height: 30px;
+  margin-left: 78px;
+  margin-top: 40px ;
+  display: block;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 30px;
+  background: linear-gradient(#ff106096,#ff06ff);
+}
+.check-box{
+  margin: 10px 10px 0  30px;
+}
+.check-box span{
+  color: #777;
+  font-size: 13px;
+  bottom: 68px;
+  position: absolute;
+}
+#login{
+  left: 20px;
+}
+#register{
+  left: 450px;
+}
+img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -50px;
+  top: 30px;
+  cursor: pointer;
+}
